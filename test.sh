@@ -1,0 +1,1 @@
+npm install --prefix ./app; npm start --prefix ./app
