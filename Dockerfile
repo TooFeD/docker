@@ -28,6 +28,10 @@ RUN apt-get -qy autoremove
 # add the application to the container
 ADD app /app
 ADD test.sh test.sh
-#EXPOSE 8080
+EXPOSE 8080
 
-CMD ["bash", "test.sh"]
+
+ENV APP_HOME /app
+WORKDIR $APP_HOME
+RUN npm install
+CMD npm run start
