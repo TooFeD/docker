@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "toofed/im_for_aws",
+    "Name": "toofed/aws",
     "Update": "true"
   },
   "Ports": [
@@ -9,5 +9,5 @@
       "ContainerPort": "8082"
     }
   ],
-  "Logging": "/var/log/nginx"
+  "Logging": "/var/log"
 }
